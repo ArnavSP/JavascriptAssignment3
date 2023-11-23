@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Required Meta Data-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/pizza.js" defer></script>
+  <title>Assignment 3 - Pizza Order Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Pizza Order Form</h1>
+
+    <form id="pizza-form">
+      <!-- Pizza Size -->
+      <label for="pizza-size">Pizza Size:</label>
+      <select id="pizza-size" name="pizza-size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="X-large">X-Large</option>
+      </select>
+
+      <!-- Cheese -->
+      <label for="cheese">Cheese:</label>
+      <select id="cheese" name="cheese">
+        <option value="mozzarella">Mozzarella</option>
+        <option value="cheddar">Cheddar</option>
+        <option value="parmesan">Parmesan</option>
+        <option value="gouda">Gouda</option>
+      </select>
+
+      <!-- Toppings -->
+      <fieldset>
+        <legend>Toppings:</legend>
+      
+        <label for="pepperoni">
+          <input type="checkbox" id="pepperoni" name="topping" value="pepperoni"> Pepperoni
+        </label>
+      
+        <label for="chicken">
+          <input type="checkbox" id="chicken" name="topping" value="chicken"> Chicken
+        </label>
+      
+        <label for="bell-peppers">
+          <input type="checkbox" id="bell-peppers" name="topping" value="bell-peppers"> Bell Peppers
+        </label>
+      
+        <label for="onions">
+          <input type="checkbox" id="onions" name="topping" value="onions"> Onions
+        </label>
+      
+        <label for="corn">
+          <input type="checkbox" id="corn" name="topping" value="corn"> Corn
+        </label>
+      
+        <label for="mushroom">
+          <input type="checkbox" id="mushroom" name="topping" value="mushroom"> Mushroom
+        </label>
+      
+        <label for="beef">
+          <input type="checkbox" id="beef" name="topping" value="beef"> Beef
+        </label>
+      </fieldset>
+
+      <!-- Crust Type -->
+      <label for="crust-type">Crust Type:</label>
+      <select id="crust-type" name="crust-type">
+        <option value="stuff-crust">Stuffed Crust</option>
+        <option value="hand-tossed">Hand Tossed</option>
+        <option value="thick-crust">Thick Crust</option>
+        <option value="new-york-style">New York Style</option>
+      </select>
+
+      <!--Order Button that connect to the orderPizza class in JS-->
+      <button type="button" onclick="orderPizza()">Order</button>
+    </form>
+
+    <!-- Pizza Description -->
+    <div id="pizza-description"></div>
+  </div>
+
+  <!--Student Name and Number-->
+  <p id="student-info">Name: Arnav Saini / Student Number: 200542352 | </p>
+  
+</body>
+
+</html>
